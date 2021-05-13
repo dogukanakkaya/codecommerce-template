@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;800;900&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav-title{
+    @apply mb-3 uppercase tracking-wide font-semibold lg:text-xs text-gray-900;
+}
+
+.nav-item{
+    @apply py-2 flex items-center hover:text-gray-900 transition-colors duration-200;    
+}
+
+.product-card{
+    @apply bg-white rounded shadow overflow-hidden relative duration-200;
+}
+
+/*
+.product-card .product-buttons{
+    @apply md:opacity-0 md:invisible absolute right-2 top-2 ease-in-out duration-200;
+}
+
+.product-card .product-buttons li{
+    @apply bg-white rounded-full w-10 h-10 flex items-center justify-center cursor-pointer mb-1 lg:mb-2 hover:bg-gray-600 hover:text-white duration-300;
+}
+
+
+.product-card:hover .product-buttons{
+    @apply opacity-100 visible;
+}
+*/
+
+.product-card .add-to-cart{
+    @apply mt-2 w-full py-1 px-3 rounded bg-blue-500 text-white opacity-0 transition-opacity duration-300 hover:shadow-inner hover:bg-blue-600 outline-none;
+}
+
+.product-card:hover{
+    @apply shadow-lg;
+}
+
+.product-card:hover .add-to-cart{
+    @apply opacity-100;
+}
+
+.product-properties{
+    @apply absolute left-3 top-3 flex z-10;
+}
+
+.product-properties li{
+    @apply rounded-full py-1 px-4 flex items-center justify-center text-white uppercase mr-1 lg:mr-2 text-xs;
+}
+
+.product-img{
+    @apply relative;
+}
+
+.product-overlay{
+    @apply bg-opacity-25 bg-blue-700 absolute w-full h-full opacity-0 top-0 flex justify-center items-center transition-all ease-linear duration-200;
+}
+
+.product-card:hover .product-overlay{
+    @apply opacity-100;
+}
+
+.mobile-app-btn{
+    @apply rounded-full bg-black w-16 h-16 flex items-center justify-center m-1;
+}
+
+.home-swiper-active{
+    @apply ring-2 ring-blue-500 ring-offset-2 lg:ring-offset-4;
+}
+
+.product-group-title{
+    @apply block text-3xl font-semibold text-gray-800 mb-4;
+}
+
+.bi{
+    @apply align-middle;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}

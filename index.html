@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codecommerce</title>
+    <link rel="stylesheet" href="./dist/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+
+<body class="font-primary text-gray-500 text-xs sm:text-sm">
+    <div style="background-image: url('./dist/img/header-bg.png');">
+        <div class="container flex flex-col sm:flex-row justify-between items-center p-4 lg:px-0">
+            <p class="font-semibold text-center">Save your money with 15% discount for 1 week on all products!</p>
+            <div class="flex items-center justify-center sm:justify-between w-full sm:w-48 mt-3 sm:mt-0">
+                <a href="#"
+                    class="rounded-full uppercase opacity-75 py-2 px-8 mr-2 sm:mr-0 font-bold bg-gray-100 hover:bg-gray-700 hover:text-white ease-in duration-200">Explore</a>
+                <i
+                    class="bi bi-x bg-gray-100 h-7 w-7 rounded-full p-1 hover:bg-gray-300 cursor-pointer text-center"></i>
+            </div>
+        </div>
+    </div>
+    <div class="border-b">
+        <div class="container flex justify-between items-center p-4 lg:px-0">
+            <ul class="flex">
+                <li><a href="" class="d-block pr-5 font-semibold border-r hover:text-gray-700"><i
+                            class="bi bi-telephone text-xl"></i> <span class="hidden md:inline-block">+90 511 111
+                            2712</span></a></li>
+                <li><a href="" class="d-block pr-5 pl-5 font-semibold hover:text-gray-700"><i
+                            class="bi bi-envelope text-xl"></i> <span
+                            class="hidden md:inline-block">info@codethereal.com</span></a></li>
+            </ul>
+            <ul class="flex">
+                <li><a href="" class="d-block pl-5 pr-5 font-semibold border-r hover:text-gray-700"><i
+                            class="bi bi-person-check text-xl md:text-base"></i> <span
+                            class="hidden md:inline-block">LOGIN</span></a></li>
+                <li><a href="" class="d-block pl-5 pr-5 font-semibold border-r hover:text-gray-700"><i
+                            class="bi bi-person-plus text-xl md:text-base"></i> <span
+                            class="hidden md:inline-block">REGISTER</span></a></li>
+                <li><a href="" class="d-block pl-5 font-semibold hover:text-gray-700"><span
+                            class="text-xl md:text-base">$</span> <span class="hidden md:inline-block">USD</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container p-4 lg:px-0">
+        <div class="grid grid-cols-6 align-middle">
+            <div class="col-span-6 lg:col-span-1 flex items-center justify-center lg:justify-start">
+                <a class="w-full" href=""><img src="./dist/img/logo-dark.svg" class="w-full lg:w-48" alt=""></a>
+            </div>
+            <div class="col-span-6 lg:col-span-4 relative">
+                <i class="bi bi-search absolute left-0 top-3"></i>
+                <input type="search" class="py-3 px-5 outline-none border-b-2 w-full"
+                    placeholder="Search for the product you want...">
+            </div>
+            <ul class="col-span-1 hidden lg:flex lg:justify-end items-center">
+                <li class="mr-5">
+                    <a href="#" class="text-xs font-semibold flex items-center"><i
+                            class="bi bi-truck text-xl lg:text-3xl mr-1"></i> Shipping <br> Status</a>
+                </li>
+                <li>
+                    <a href="#" class="text-xs font-semibold flex items-center"><i
+                            class="bi bi-cart text-xl lg:text-3xl mr-1"></i> My Cart <br> 2 product</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container p-4 lg:px-0">
+        <div class="bg-white rounded shadow overflow-hidden">
+            <div id="home-swiper-top" class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href=""><img class="w-full" src="./dist/img/slide.png" alt=""></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href=""><img class="w-full" src="./dist/img/slide.png" alt=""></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href=""><img class="w-full" src="./dist/img/slide.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div id="home-swiper-thumbs" class="flex justify-center p-2 lg:p-4">
+                <div data-index="0" class="home-swiper-active cursor-pointer rounded-full mr-4"><img
+                        class="w-10 h-10 lg:w-16 lg:h-16 rounded-full" src="./dist/img/slide-thumb.png" alt=""></div>
+                <div data-index="1" class="cursor-pointer rounded-full mr-4"><img
+                        class="w-10 h-10 lg:w-16 lg:h-16 rounded-full" src="./dist/img/slide-thumb.png" alt=""></div>
+                <div data-index="2" class="cursor-pointer rounded-full mr-4"><img
+                        class="w-10 h-10 lg:w-16 lg:h-16 rounded-full" src="./dist/img/slide-thumb.png" alt=""></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container grid grid-cols-6 p-4 lg:px-0">
+        <nav id="nav"
+            class="col-span-1 fixed z-40 inset-0 h-full bg-black bg-opacity-25 w-full hidden lg:bg-white lg:static lg:block">
+            <div
+                class="h-full overflow-y-auto p-4 lg:p-0 lg:h-auto lg:block overflow-hidden bg-white mr-24 md:mr-48 lg:mr-0">
+                <ul>
+                    <li>
+                        <h5 class="nav-title">Technology</h5>
+                        <ul>
+                            <li><a href="#" class="nav-item">Computer</a></li>
+                            <li><a href="#" class="nav-item">Phone</a></li>
+                            <li><a href="#" class="nav-item">Monitor</a></li>
+                            <li><a href="#" class="nav-item">Tablet</a></li>
+                            <li><a href="#" class="nav-item">Laptop</a></li>
+                        </ul>
+                    </li>
+                    <li class="mt-8">
+                        <h5 class="nav-title">Home, Living</h5>
+                        <ul>
+                            <li><a href="#" class="nav-item">Kitchen</a></li>
+                            <li><a href="#" class="nav-item">Furniture</a></li>
+                            <li><a href="#" class="nav-item">Lighting</a></li>
+                            <li><a href="#" class="nav-item">Bathroom</a></li>
+                        </ul>
+                    </li>
+                    <li class="mt-8">
+                        <h5 class="nav-title">Clothing</h5>
+                        <ul>
+                            <li><a href="#" class="nav-item">Skin Care</a></li>
+                            <li><a href="#" class="nav-item">Hair Care</a></li>
+                            <li><a href="#" class="nav-item">Sun Care</a></li>
+                            <li><a href="#" class="nav-item">Mouth Care</a></li>
+                            <li><a href="#" class="nav-item">Shaving Products</a></li>
+                            <li><a href="#" class="nav-item">Epilation & Waxing</a></li>
+                        </ul>
+                    </li>
+                    <li class="mt-8">
+                        <h5 class="nav-title">Personal Care</h5>
+                        <ul>
+                            <li><a href="#" class="nav-item">Man</a></li>
+                            <li><a href="#" class="nav-item">Woman</a></li>
+                            <li><a href="#" class="nav-item">Children</a></li>
+                        </ul>
+                    </li>
+                    <li class="mt-8">
+                        <h5 class="nav-title">Medical</h5>
+                        <ul>
+                            <li><a href="#" class="nav-item">Mask</a></li>
+                        </ul>
+                    </li>
+                    <li class="mt-8">
+                        <a href=""><img src="./dist/img/campaign.png" alt=""></a>
+                    </li>
+                    <li class="mt-8">
+                        <a href=""><img src="dist/img/campaign.png" alt=""></a>
+                    </li>
+                    <li class="mt-8">
+                        <a href=""><img src="dist/img/campaign.png" alt=""></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="col-span-full lg:col-span-5 p-4 bg-gray-50">
+            <div class="mb-8">
+                <h5 class="product-group-title">Explore</h5>
+                <div class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+                    <div class="product-card">
+                        <ul class="product-properties">
+                            <li class="discount bg-green-400">-15%</li>
+                            <li class="new bg-red-400">NEW</li>
+                        </ul>
+                        <div class="product-img">
+                            <img class="w-full" src="./dist/img/product.png" alt="">
+                            <a class="product-overlay" href=""><i
+                                    class="bi bi-arrow-right text-2xl bg-white rounded-full w-12 h-12 flex justify-center items-center text-blue-500"></i></a>
+                        </div>
+                        <div class="text-center m-3">
+                            <span class="line-through text-gray-400">455,30₺</span> <span
+                                class="text-xl text-green-400">302,90₺</span>
+                            <h1><a href="#" class="hover:text-gray-900">Lorem ipsum dolor sit.</a>
+                            </h1>
+                            <button class="add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <ul class="product-properties">
+                            <li class="new bg-red-400">NEW</li>
+                        </ul>
+                        <div class="product-img">
+                            <img class="w-full" src="./dist/img/product.png" alt="">
+                            <a class="product-overlay" href=""><i
+                                    class="bi bi-arrow-right text-2xl bg-white rounded-full w-12 h-12 flex justify-center items-center text-blue-500"></i></a>
+                        </div>
+                        <div class="text-center m-3">
+                            <span class="text-xl">302,90₺</span>
+                            <h1><a href="#" class="hover:text-gray-900">Lorem ipsum dolor sit.</a>
+                            </h1>
+                            <button class="add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <ul class="product-properties">
+                            <li class="new bg-blue-400">POPULAR</li>
+                        </ul>
+                        <div class="product-img">
+                            <img class="w-full" src="./dist/img/product.png" alt="">
+                            <a class="product-overlay" href=""><i
+                                    class="bi bi-arrow-right text-2xl bg-white rounded-full w-12 h-12 flex justify-center items-center text-blue-500"></i></a>
+                        </div>
+                        <div class="text-center m-3">
+                            <span class="text-xl">302,90₺</span>
+                            <h1><a href="#" class="hover:text-gray-900">Lorem ipsum dolor sit.</a>
+                            </h1>
+                            <button class="add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img class="w-full" src="./dist/img/product.png" alt="">
+                            <a class="product-overlay" href=""><i
+                                    class="bi bi-arrow-right text-2xl bg-white rounded-full w-12 h-12 flex justify-center items-center text-blue-500"></i></a>
+                        </div>
+                        <div class="text-center m-3">
+                            <span class="text-xl">302,90₺</span>
+                            <h1><a href="#" class="hover:text-gray-900">Lorem ipsum dolor sit.</a>
+                            </h1>
+                            <button class="add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img class="w-full" src="./dist/img/product.png" alt="">
+                            <a class="product-overlay" href=""><i
+                                    class="bi bi-arrow-right text-2xl bg-white rounded-full w-12 h-12 flex justify-center items-center text-blue-500"></i></a>
+                        </div>
+                        <div class="text-center m-3">
+                            <span class="text-xl">302,90₺</span>
+                            <h1><a href="#" class="hover:text-gray-900">Lorem ipsum dolor sit.</a>
+                            </h1>
+                            <button class="add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img class="w-full" src="./dist/img/product.png" alt="">
+                            <a class="product-overlay" href=""><i
+                                    class="bi bi-arrow-right text-2xl bg-white rounded-full w-12 h-12 flex justify-center items-center text-blue-500"></i></a>
+                        </div>
+                        <div class="text-center m-3">
+                            <span class="text-xl">302,90₺</span>
+                            <h1><a href="#" class="hover:text-gray-900">Lorem ipsum dolor sit.</a>
+                            </h1>
+                            <button class="add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img class="w-full" src="./dist/img/product.png" alt="">
+                            <a class="product-overlay" href=""><i
+                                    class="bi bi-arrow-right text-2xl bg-white rounded-full w-12 h-12 flex justify-center items-center text-blue-500"></i></a>
+                        </div>
+                        <div class="text-center m-3">
+                            <span class="text-xl">302,90₺</span>
+                            <h1><a href="#" class="hover:text-gray-900">Lorem ipsum dolor sit.</a>
+                            </h1>
+                            <button class="add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img class="w-full" src="./dist/img/product.png" alt="">
+                            <a class="product-overlay" href=""><i
+                                    class="bi bi-arrow-right text-2xl bg-white rounded-full w-12 h-12 flex justify-center items-center text-blue-500"></i></a>
+                        </div>
+                        <div class="text-center m-3">
+                            <span class="text-xl">302,90₺</span>
+                            <h1><a href="#" class="hover:text-gray-900">Lorem ipsum dolor sit.</a>
+                            </h1>
+                            <button class="add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img class="w-full" src="./dist/img/product.png" alt="">
+                            <a class="product-overlay" href=""><i
+                                    class="bi bi-arrow-right text-2xl bg-white rounded-full w-12 h-12 flex justify-center items-center text-blue-500"></i></a>
+                        </div>
+                        <div class="text-center m-3">
+                            <span class="text-xl">302,90₺</span>
+                            <h1><a href="#" class="hover:text-gray-900">Lorem ipsum dolor sit.</a>
+                            </h1>
+                            <button class="add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img class="w-full" src="./dist/img/product.png" alt="">
+                            <a class="product-overlay" href=""><i
+                                    class="bi bi-arrow-right text-2xl bg-white rounded-full w-12 h-12 flex justify-center items-center text-blue-500"></i></a>
+                        </div>
+                        <div class="text-center m-3">
+                            <span class="text-xl">302,90₺</span>
+                            <h1><a href="#" class="hover:text-gray-900">Lorem ipsum dolor sit.</a>
+                            </h1>
+                            <button class="add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-8">
+                <h5 class="product-group-title">Week's Best</h5>
+                <div class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+                    <div class="product-card">
+                        <ul class="product-properties">
+                            <li class="discount bg-green-400">-15%</li>
+                            <li class="new bg-red-400">NEW</li>
+                        </ul>
+                        <div class="product-img">
+                            <img class="w-full" src="./dist/img/product.png" alt="">
+                            <a class="product-overlay" href=""><i
+                                    class="bi bi-arrow-right text-2xl bg-white rounded-full w-12 h-12 flex justify-center items-center text-blue-500"></i></a>
+                        </div>
+                        <div class="text-center m-3">
+                            <span class="line-through text-gray-400">455,30₺</span> <span
+                                class="text-xl text-green-400">302,90₺</span>
+                            <h1><a href="#" class="hover:text-gray-900">Lorem ipsum dolor sit.</a>
+                            </h1>
+                            <button class="add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <ul class="product-properties">
+                            <li class="new bg-red-400">NEW</li>
+                        </ul>
+                        <div class="product-img">
+                            <img class="w-full" src="./dist/img/product.png" alt="">
+                            <a class="product-overlay" href=""><i
+                                    class="bi bi-arrow-right text-2xl bg-white rounded-full w-12 h-12 flex justify-center items-center text-blue-500"></i></a>
+                        </div>
+                        <div class="text-center m-3">
+                            <span class="text-xl">302,90₺</span>
+                            <h1><a href="#" class="hover:text-gray-900">Lorem ipsum dolor sit.</a>
+                            </h1>
+                            <button class="add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <ul class="product-properties">
+                            <li class="new bg-blue-400">POPULAR</li>
+                        </ul>
+                        <div class="product-img">
+                            <img class="w-full" src="./dist/img/product.png" alt="">
+                            <a class="product-overlay" href=""><i
+                                    class="bi bi-arrow-right text-2xl bg-white rounded-full w-12 h-12 flex justify-center items-center text-blue-500"></i></a>
+                        </div>
+                        <div class="text-center m-3">
+                            <span class="text-xl">302,90₺</span>
+                            <h1><a href="#" class="hover:text-gray-900">Lorem ipsum dolor sit.</a>
+                            </h1>
+                            <button class="add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img class="w-full" src="./dist/img/product.png" alt="">
+                            <a class="product-overlay" href=""><i
+                                    class="bi bi-arrow-right text-2xl bg-white rounded-full w-12 h-12 flex justify-center items-center text-blue-500"></i></a>
+                        </div>
+                        <div class="text-center m-3">
+                            <span class="text-xl">302,90₺</span>
+                            <h1><a href="#" class="hover:text-gray-900">Lorem ipsum dolor sit.</a>
+                            </h1>
+                            <button class="add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img class="w-full" src="./dist/img/product.png" alt="">
+                            <a class="product-overlay" href=""><i
+                                    class="bi bi-arrow-right text-2xl bg-white rounded-full w-12 h-12 flex justify-center items-center text-blue-500"></i></a>
+                        </div>
+                        <div class="text-center m-3">
+                            <span class="text-xl">302,90₺</span>
+                            <h1><a href="#" class="hover:text-gray-900">Lorem ipsum dolor sit.</a>
+                            </h1>
+                            <button class="add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img class="w-full" src="./dist/img/product.png" alt="">
+                            <a class="product-overlay" href=""><i
+                                    class="bi bi-arrow-right text-2xl bg-white rounded-full w-12 h-12 flex justify-center items-center text-blue-500"></i></a>
+                        </div>
+                        <div class="text-center m-3">
+                            <span class="text-xl">302,90₺</span>
+                            <h1><a href="#" class="hover:text-gray-900">Lorem ipsum dolor sit.</a>
+                            </h1>
+                            <button class="add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img class="w-full" src="./dist/img/product.png" alt="">
+                            <a class="product-overlay" href=""><i
+                                    class="bi bi-arrow-right text-2xl bg-white rounded-full w-12 h-12 flex justify-center items-center text-blue-500"></i></a>
+                        </div>
+                        <div class="text-center m-3">
+                            <span class="text-xl">302,90₺</span>
+                            <h1><a href="#" class="hover:text-gray-900">Lorem ipsum dolor sit.</a>
+                            </h1>
+                            <button class="add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img class="w-full" src="./dist/img/product.png" alt="">
+                            <a class="product-overlay" href=""><i
+                                    class="bi bi-arrow-right text-2xl bg-white rounded-full w-12 h-12 flex justify-center items-center text-blue-500"></i></a>
+                        </div>
+                        <div class="text-center m-3">
+                            <span class="text-xl">302,90₺</span>
+                            <h1><a href="#" class="hover:text-gray-900">Lorem ipsum dolor sit.</a>
+                            </h1>
+                            <button class="add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img class="w-full" src="./dist/img/product.png" alt="">
+                            <a class="product-overlay" href=""><i
+                                    class="bi bi-arrow-right text-2xl bg-white rounded-full w-12 h-12 flex justify-center items-center text-blue-500"></i></a>
+                        </div>
+                        <div class="text-center m-3">
+                            <span class="text-xl">302,90₺</span>
+                            <h1><a href="#" class="hover:text-gray-900">Lorem ipsum dolor sit.</a>
+                            </h1>
+                            <button class="add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img class="w-full" src="./dist/img/product.png" alt="">
+                            <a class="product-overlay" href=""><i
+                                    class="bi bi-arrow-right text-2xl bg-white rounded-full w-12 h-12 flex justify-center items-center text-blue-500"></i></a>
+                        </div>
+                        <div class="text-center m-3">
+                            <span class="text-xl">302,90₺</span>
+                            <h1><a href="#" class="hover:text-gray-900">Lorem ipsum dolor sit.</a>
+                            </h1>
+                            <button class="add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h5 class="product-group-title">Most Selling</h5>
+                <div class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+                    <div class="product-card">
+                        <ul class="product-properties">
+                            <li class="discount bg-green-400">-15%</li>
+                            <li class="new bg-red-400">NEW</li>
+                        </ul>
+                        <div class="product-img">
+                            <img class="w-full" src="./dist/img/product.png" alt="">
+                            <a class="product-overlay" href=""><i
+                                    class="bi bi-arrow-right text-2xl bg-white rounded-full w-12 h-12 flex justify-center items-center text-blue-500"></i></a>
+                        </div>
+                        <div class="text-center m-3">
+                            <span class="line-through text-gray-400">455,30₺</span> <span
+                                class="text-xl text-green-400">302,90₺</span>
+                            <h1><a href="#" class="hover:text-gray-900">Lorem ipsum dolor sit.</a>
+                            </h1>
+                            <button class="add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <ul class="product-properties">
+                            <li class="new bg-red-400">NEW</li>
+                        </ul>
+                        <div class="product-img">
+                            <img class="w-full" src="./dist/img/product.png" alt="">
+                            <a class="product-overlay" href=""><i
+                                    class="bi bi-arrow-right text-2xl bg-white rounded-full w-12 h-12 flex justify-center items-center text-blue-500"></i></a>
+                        </div>
+                        <div class="text-center m-3">
+                            <span class="text-xl">302,90₺</span>
+                            <h1><a href="#" class="hover:text-gray-900">Lorem ipsum dolor sit.</a>
+                            </h1>
+                            <button class="add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <ul class="product-properties">
+                            <li class="new bg-blue-400">POPULAR</li>
+                        </ul>
+                        <div class="product-img">
+                            <img class="w-full" src="./dist/img/product.png" alt="">
+                            <a class="product-overlay" href=""><i
+                                    class="bi bi-arrow-right text-2xl bg-white rounded-full w-12 h-12 flex justify-center items-center text-blue-500"></i></a>
+                        </div>
+                        <div class="text-center m-3">
+                            <span class="text-xl">302,90₺</span>
+                            <h1><a href="#" class="hover:text-gray-900">Lorem ipsum dolor sit.</a>
+                            </h1>
+                            <button class="add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img class="w-full" src="./dist/img/product.png" alt="">
+                            <a class="product-overlay" href=""><i
+                                    class="bi bi-arrow-right text-2xl bg-white rounded-full w-12 h-12 flex justify-center items-center text-blue-500"></i></a>
+                        </div>
+                        <div class="text-center m-3">
+                            <span class="text-xl">302,90₺</span>
+                            <h1><a href="#" class="hover:text-gray-900">Lorem ipsum dolor sit.</a>
+                            </h1>
+                            <button class="add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img class="w-full" src="./dist/img/product.png" alt="">
+                            <a class="product-overlay" href=""><i
+                                    class="bi bi-arrow-right text-2xl bg-white rounded-full w-12 h-12 flex justify-center items-center text-blue-500"></i></a>
+                        </div>
+                        <div class="text-center m-3">
+                            <span class="text-xl">302,90₺</span>
+                            <h1><a href="#" class="hover:text-gray-900">Lorem ipsum dolor sit.</a>
+                            </h1>
+                            <button class="add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img class="w-full" src="./dist/img/product.png" alt="">
+                            <a class="product-overlay" href=""><i
+                                    class="bi bi-arrow-right text-2xl bg-white rounded-full w-12 h-12 flex justify-center items-center text-blue-500"></i></a>
+                        </div>
+                        <div class="text-center m-3">
+                            <span class="text-xl">302,90₺</span>
+                            <h1><a href="#" class="hover:text-gray-900">Lorem ipsum dolor sit.</a>
+                            </h1>
+                            <button class="add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img class="w-full" src="./dist/img/product.png" alt="">
+                            <a class="product-overlay" href=""><i
+                                    class="bi bi-arrow-right text-2xl bg-white rounded-full w-12 h-12 flex justify-center items-center text-blue-500"></i></a>
+                        </div>
+                        <div class="text-center m-3">
+                            <span class="text-xl">302,90₺</span>
+                            <h1><a href="#" class="hover:text-gray-900">Lorem ipsum dolor sit.</a>
+                            </h1>
+                            <button class="add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img class="w-full" src="./dist/img/product.png" alt="">
+                            <a class="product-overlay" href=""><i
+                                    class="bi bi-arrow-right text-2xl bg-white rounded-full w-12 h-12 flex justify-center items-center text-blue-500"></i></a>
+                        </div>
+                        <div class="text-center m-3">
+                            <span class="text-xl">302,90₺</span>
+                            <h1><a href="#" class="hover:text-gray-900">Lorem ipsum dolor sit.</a>
+                            </h1>
+                            <button class="add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img class="w-full" src="./dist/img/product.png" alt="">
+                            <a class="product-overlay" href=""><i
+                                    class="bi bi-arrow-right text-2xl bg-white rounded-full w-12 h-12 flex justify-center items-center text-blue-500"></i></a>
+                        </div>
+                        <div class="text-center m-3">
+                            <span class="text-xl">302,90₺</span>
+                            <h1><a href="#" class="hover:text-gray-900">Lorem ipsum dolor sit.</a>
+                            </h1>
+                            <button class="add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img class="w-full" src="./dist/img/product.png" alt="">
+                            <a class="product-overlay" href=""><i
+                                    class="bi bi-arrow-right text-2xl bg-white rounded-full w-12 h-12 flex justify-center items-center text-blue-500"></i></a>
+                        </div>
+                        <div class="text-center m-3">
+                            <span class="text-xl">302,90₺</span>
+                            <h1><a href="#" class="hover:text-gray-900">Lorem ipsum dolor sit.</a>
+                            </h1>
+                            <button class="add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+            <div
+                class="flex flex-col items-center justify-center py-10 p-5 odd:bg-gray-100 even:bg-gray-50 text-center">
+                <i class="bi bi-truck text-3xl"></i>
+                <h4 class="text-base">Free Shipping</h4>
+                <p>Free shipping on your purchases of 100$ or more</p>
+            </div>
+            <div
+                class="flex flex-col items-center justify-center py-10 p-5 odd:bg-gray-100 even:bg-gray-50 text-center">
+                <i class="bi bi-headphones text-3xl"></i>
+                <h4 class="text-base">7/24 Support</h4>
+                <p>Full time Whatsapp support line</p>
+            </div>
+            <div
+                class="flex flex-col items-center justify-center py-10 p-5 odd:bg-gray-100 even:bg-gray-50 text-center">
+                <i class="bi bi-credit-card text-3xl"></i>
+                <h4 class="text-base">Secure Payment</h4>
+                <p>Secure payment with Codethereal assurance</p>
+            </div>
+            <div
+                class="flex flex-col items-center justify-center py-10 p-5 odd:bg-gray-100 even:bg-gray-50 text-center">
+                <i class="bi bi-shield-check text-3xl"></i>
+                <h4 class="text-base">Refund Guarantee</h4>
+                <p>Return guarantee for incomplete, incorrect shipments</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-gray-200 py-10">
+        <div class="container">
+            <div class="flex flex-wrap">
+                <ul class="flex flex-col justify-center items-center mb-5 w-full sm:w-1/2">
+                    <li><a href="#" class="px-4 py-2 block hover:text-gray-900">About</a></li>
+                    <li><a href="#" class="px-4 py-2 block hover:text-gray-900">Contact</a></li>
+                    <li><a href="#" class="px-4 py-2 block hover:text-gray-900">Operation Guide</a></li>
+                    <li><a href="#" class="px-4 py-2 block hover:text-gray-900">Solution Center</a></li>
+                    <li><a href="#" class="px-4 py-2 block hover:text-gray-900">Personal Data Protection Law</a>
+                    </li>
+                </ul>
+                <ul class="flex flex-col justify-center items-center mb-5 w-full sm:w-1/2">
+                    <li><a href="#" class="px-4 py-2 block hover:text-gray-900">About</a></li>
+                    <li><a href="#" class="px-4 py-2 block hover:text-gray-900">Contact</a></li>
+                    <li><a href="#" class="px-4 py-2 block hover:text-gray-900">Operation Guide</a></li>
+                    <li><a href="#" class="px-4 py-2 block hover:text-gray-900">Solution Center</a></li>
+                    <li><a href="#" class="px-4 py-2 block hover:text-gray-900">Personal Data Protection Law</a>
+                    </li>
+                </ul>
+                <ul class="flex justify-center items-center w-full mt-5">
+                    <li><a href="" class="w-10 h-10 mx-2 flex justify-center items-center rounded-full bg-gray-300"><i
+                                class="bi bi-facebook"></i></a></li>
+                    <li><a href="" class="w-10 h-10 mx-2 flex justify-center items-center rounded-full bg-gray-300"><i
+                                class="bi bi-instagram"></i></a></li>
+                    <li><a href="" class="w-10 h-10 mx-2 flex justify-center items-center rounded-full bg-gray-300"><i
+                                class="bi bi-linkedin"></i></a></li>
+                    <li><a href="" class="w-10 h-10 mx-2 flex justify-center items-center rounded-full bg-gray-300"><i
+                                class="bi bi-twitter"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="text-center mt-5">
+                <p>&copy; <a href="https://codethereal.com" class="text-blue-500" target="_blank">Codethereal</a>. All
+                    rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <ul class="lg:hidden z-50 right-0 bottom-0 fixed flex flex-col items-end w-max">
+        <li class="mobile-app-btn"><i class="bi bi-cart text-white text-2xl"></i></li>
+        <li class="mobile-app-btn" id="nav-toggle"><i class="bi bi-list text-white text-2xl"></i></li>
+    </ul>
+
+    <div
+        class="w-16 h-16 bg-green-400 flex items-center justify-center fixed bottom-0 left-0 m-1 rounded-full text-white shadow-inner z-40">
+        <a href="https://wa.me/+905333333333" target="_blank"><i class="bi bi-whatsapp text-2xl"></i></a>
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+    // Elements
+    const nav = document.getElementById('nav')
+    const navToggle = document.getElementById('nav-toggle')
+
+    const homeSwiper = new Swiper('#home-swiper-top', {
+        effect: 'fade',
+        fadeEffect: {
+            crossFade: true
+        },
+        loop: true,
+        autoplay: {
+            delay: 5000
+        }
+    });
+
+    homeSwiper.on('slideChange', () => {
+        // Find active slide and remove active class
+        document.querySelector(`#home-swiper-thumbs .home-swiper-active`).classList.remove('home-swiper-active')
+
+        // Add active class to active slide
+        document.querySelector(`#home-swiper-thumbs [data-index='${homeSwiper.realIndex}']`).classList.toggle(
+            'home-swiper-active')
+    });
+
+    /**
+     * Loop over every slide thumb and add event listener for hover
+     * and change slide to thumb's slide on hover
+     */
+    document.querySelectorAll('#home-swiper-thumbs > div').forEach(thumb => thumb.addEventListener('mouseenter', () => {
+        // Get the hovered thumb's index
+        const index = thumb.getAttribute('data-index')
+
+        // Slide to hovered thumb's slide
+        homeSwiper.slideTo(parseInt(index) + 1)
+    }))
+
+    navToggle.addEventListener('click', () => {
+        // Toggle hidden class on nav
+        nav.classList.toggle('hidden')
+
+        // Toggle close icon
+        navToggle.querySelector('i').classList.toggle('bi-x')
+    })
+    </script>
+</body>
+
+</html>
